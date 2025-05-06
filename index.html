@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rust WebAssembly Fibonacci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fibonacci with WebAssembly and JS</h1>
+        <input id="input" type="number" placeholder="Enter a number">
+        <div class="controls">
+            <button id="calculate-by-rust">Calculate Fibonacci (Rust)</button>
+            <button id="calculate-by-js">Calculate Fibonacci (JavaScript)</button>
+        </div>
+        <div class="results">
+            <div class="result-item">
+                <p>Result (wasm): <span id="rust-result"></span></p>
+                <p>Runtime (wasm): <span id="rust-runtime"></span> ms</p>
+            </div>
+            <div class="result-item">
+                <p>Result (JavaScript): <span id="js-result"></span></p>
+                <p>Runtime (JavaScript): <span id="js-runtime"></span> ms</p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
