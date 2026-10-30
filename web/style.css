@@ -1,0 +1,90 @@
+/* 基本全局樣式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* 標題樣式 */
+h1 {
+    color: #444;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* 容器樣式 */
+.container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 50%;
+
+    margin: auto;
+}
+
+/* 按鈕與輸入框的佈局 */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+    margin: 0px 20px 20px 2cqh;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 結果與執行時間的佈局 */
+.results {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+p {
+    margin: 20px;
+}
+.result-item {
+    flex: 1;
+    text-align: left;
+
+    border: 3px solid #444;
+    margin: 5px;
+}
+
+
+.result-item span {
+    font-weight: bold;
+}
